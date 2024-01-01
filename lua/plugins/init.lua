@@ -45,7 +45,7 @@ return {
     }
   },
 
-  -- Lualin statusline
+  -- Lualine statusline
   {
     "nvim-lualine/lualine.nvim",
     opts = {
@@ -57,4 +57,10 @@ return {
       },
     },
   },
+
+  -- Autoformatting plugin
+  {
+    "stevearc/conform.nvim",
+    opts = {},
+  }
 }
