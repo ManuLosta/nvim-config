@@ -1,55 +1,55 @@
 return {
-	{ "folke/which-key.nvim", opts = {} },
-	-- Git related plugins
-	"tpope/vim-fugitive",
-	"tpope/vim-rhubarb",
+  { "folke/which-key.nvim", opts = {} },
+  -- Git related plugins
+  "tpope/vim-fugitive",
+  "tpope/vim-rhubarb",
 
-	-- Detect tabstop and shiftwidth automatically
-	"tpope/vim-sleuth",
+  -- Detect tabstop and shiftwidth automatically
+  "tpope/vim-sleuth",
 
-	{
-		-- Add indentation guides even on blank lines
-		"lukas-reineke/indent-blankline.nvim",
-		-- Enable `lukas-reineke/indent-blankline.nvim`
-		-- See `:help ibl`
-		main = "ibl",
-		opts = {},
-	},
+  {
+    -- Add indentation guides even on blank lines
+    "lukas-reineke/indent-blankline.nvim",
+    -- Enable `lukas-reineke/indent-blankline.nvim`
+    -- See `:help ibl`
+    main = "ibl",
+    opts = {},
+  },
 
-	{ "numToStr/Comment.nvim", opts = {} },
+  { "numToStr/Comment.nvim", opts = {} },
 
-	-- Catpuccin Colorscheme
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		config = function()
-			vim.cmd.colorscheme("catppuccin-mocha")
-		end,
-	},
+  -- Catpuccin Colorscheme
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("catppuccin-mocha")
+    end,
+  },
 
-	-- Lualine statusline
-	{
-		"nvim-lualine/lualine.nvim",
-		opts = {
-			options = {
-				icons_enabled = false,
-				theme = "catppuccin",
-				component_separators = "|",
-				section_separators = "",
-			},
-		},
-	},
+  -- Lualine statusline
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        icons_enabled = false,
+        theme = "catppuccin",
+        component_separators = "|",
+        section_separators = "",
+      },
+    },
+  },
 
-	-- Autoformatting plugin
-	{
-		"stevearc/conform.nvim",
-		opts = {},
-	},
+  -- Autoformatting plugin
+  {
+    "stevearc/conform.nvim",
+    opts = {},
+  },
 
-	{
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-		opts = {},
-	},
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    opts = {},
+  },
 }
