@@ -2,12 +2,16 @@ local M = {
   "nvim-treesitter/nvim-treesitter",
   dependencies = {
     "nvim-treesitter/nvim-treesitter-textobjects",
+    "windwp/nvim-ts-autotag",
   },
   build = ":TSUpdate",
 }
 
 function M.config()
   require("nvim-treesitter.configs").setup({
+    autotag = {
+      enable = true,
+    },
     -- Add languages to be installed here that you want installed for treesitter
     ensure_installed = {
       "c",
@@ -83,6 +87,8 @@ function M.config()
       },
     },
   })
+
+  require("ts_context_commentstring").setup({})
 end
 
 return M
